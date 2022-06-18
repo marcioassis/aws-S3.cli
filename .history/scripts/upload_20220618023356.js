@@ -5,8 +5,7 @@ import {readFileSync} from 'fs';
 // Loading Credentials from ~/.aws/credentials
 const config = {
     region: 'us-east-1',
-    credentials: fromIni({profile: 'elzaassis-s3-ap	
-'})
+    credentials: fromIni({profile: 'tutorials3'})
 };
 
 // Preparing Object conte to submit

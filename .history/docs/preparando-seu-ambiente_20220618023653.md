@@ -48,8 +48,7 @@ Este é um exemplo utilizando o profile `elzaassis-s3-ap
 import { S3Client } from "@aws-sdk/client-s3";
 const config = {
     region: 'us-east-1',
-    credentials: fromIni({profile: 'elzaassis-s3-ap	
-'})
+    credentials: fromIni({profile: 'tutorials3'})
 };
 const s3Client = new S3Client(config);
 ```

@@ -22,14 +22,12 @@ Para enviar requisições à API da AWS você precisa autenticar utilizando as c
 Na instância onde irá executar os testes, após instalar o AWS-CLI, você deve criar/editar o arquivo `~/.aws/credentials`
 e inserir as seguintes linhas:
 ```shell
-[elzaassis-s3-ap	
-]
+[tutorials3]
 aws_access_key_id = <YOUR_ACCESS_KEY_ID>
 aws_secret_access_key = <YOUR_SECRET_ACCESS_KEY>
 ```
 
-O parâmetro `[elzaassis-s3-ap	
-]` representa um profile específico, se você executou o `aws configure` na etapa anterior, 
+O parâmetro `[tutorials3]` representa um profile específico, se você executou o `aws configure` na etapa anterior, 
 você verá no seu arquivo de credenciais um item `[default]` que será usando sempre que nenhum profile é especificado 
 em seu código, porém o uso de profiles permite inserir diversas credenciais em uma única máquina sem criar conflitos.
 
@@ -42,14 +40,12 @@ const config = {
 const s3Client = new S3Client(config);
 ```
 
-Este é um exemplo utilizando o profile `elzaassis-s3-ap	
-`:
+Este é um exemplo utilizando o profile `tutorials3`:
 ```javascript
 import { S3Client } from "@aws-sdk/client-s3";
 const config = {
     region: 'us-east-1',
-    credentials: fromIni({profile: 'elzaassis-s3-ap	
-'})
+    credentials: fromIni({profile: 'tutorials3'})
 };
 const s3Client = new S3Client(config);
 ```

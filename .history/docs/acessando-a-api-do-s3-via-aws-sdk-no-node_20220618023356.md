@@ -114,8 +114,7 @@ Desta forma você pode instanciar quantos S3Client's precisar com credenciais di
 Siga as instruções do tutorial [Criando Permissões do S3 no IAM](criando-permissoes-no-iam.md) e insira as credenciais 
 geradas no seu arquivo `~/.aws/credentials` da seguinte forma:
 ```shell
-[elzaassis-s3-ap	
-]
+[tutorials3]
 aws_access_key_id = <YOUR_ACCESS_KEY_ID>
 aws_secret_access_key = <YOUR_SECRET_ACCESS_KEY>
 ```
